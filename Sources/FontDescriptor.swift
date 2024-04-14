@@ -11,20 +11,20 @@ public typealias FontDescriptor = NSFontDescriptor
 #endif
 
 public extension FontDescriptor {
-  var face: String {
-    object(forKey: .face)! as! String
+  var face: String? {
+    object(forKey: .face) as? String
   }
 
-  var family: String {
-    object(forKey: .family)! as! String
+  var family: String? {
+    object(forKey: .family) as? String
   }
 
-  var name: String {
-    object(forKey: .name)! as! String
+  var name: String? {
+    object(forKey: .name) as? String
   }
 
-  var visibleName: String {
-    object(forKey: .visibleName)! as! String
+  var visibleName: String? {
+    object(forKey: .visibleName) as? String
   }
 
   convenience init(name: String) {
